@@ -9,4 +9,4 @@ Download the release or compile it and copy the folder 'Lorem' to
 
 Type in PowerToys Run the command: lorem _number_of_words_, press Enter and it will be copied to your clipboard.
 
-![Example](https://i.gyazo.com/e05bb208eee96364be5c118267168d35.png)
+![Example](https://i.gyazo.com/0961139b99c27f6e7181efb6b9662e46.png)
