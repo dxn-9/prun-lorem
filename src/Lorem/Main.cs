@@ -7,16 +7,13 @@ using System.Reflection;
 using System.Windows.Forms;
 using Wox.Plugin;
 
-using System.Diagnostics.Tracing;
-using System.Windows.Shapes;
-using System.Linq;
 
 namespace Lorem
 {
     public class Main : IPlugin
     {
 
-
+        private string IconPath { get; set; }
         private PluginInitContext Context { get; set; }
         public string Name => "Lorem";
 
@@ -25,7 +22,7 @@ namespace Lorem
         public List<Result> Query(Query query)
         {
        
-            var results = new List<Result>(); 
+            var results = new List<Result>(1); 
 
             var strs = query.RawQuery.Split(" ");
             var nums = strs[1];
@@ -39,6 +36,7 @@ namespace Lorem
                     results.Add(new Result
                     {
                         Title = lorem,
+                        IcoPath = IconPath,
                         Action = e => {
                             Clipboard.SetText(lorem);
                             return true;
@@ -48,6 +46,7 @@ namespace Lorem
 
             
             }
+         
 
          
 
@@ -112,15 +111,31 @@ namespace Lorem
  
         }
 
-    
+        private void UpdateIconPath(Theme theme)
+        {
+            if (theme == Theme.Light || theme == Theme.HighContrastWhite)
+            {
+                IconPath = "images/lorem-black.png";
+            }
+            else
+            {
+                IconPath = "images/lorem-white.png";
+            }
+        }
+
+        private void OnThemeChanged(Theme currentTheme, Theme newTheme)
+        {
+            UpdateIconPath(newTheme);
+        }
 
         public void Init(PluginInitContext context)
         {
             Context = context;
-            
+            Context.API.ThemeChanged += OnThemeChanged;
+            UpdateIconPath(Context.API.GetCurrentTheme());
+
+        }
+
 
     }
-
-
-}
 }

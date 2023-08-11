@@ -22,6 +22,12 @@
   </ItemGroup>
 
   <ItemGroup>
+	  <None Update="images\lorem-black.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="images\lorem-white.png">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
     <None Update="plugin.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -29,5 +35,6 @@
 		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	 </None>
   </ItemGroup>
+
 
 </Project>

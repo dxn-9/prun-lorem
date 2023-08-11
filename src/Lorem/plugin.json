@@ -1,11 +1,14 @@
 {
-  "ID": "EF2F634F20484459A365944FE7B07121",
+  "ID": "EF2F634F20484459A365944EE7B07121",
   "Disabled": false,
   "ActionKeyword": "lorem",
   "Name": "Lorem",
   "Author": "dandn",
+  "Website": "https://github.com/dandn9/prun-lorem",
   "Version": "1.0.0",
   "Language": "csharp",
   "ExecuteFileName": "Lorem.dll",
-  "IsGlobal": false
+  "IsGlobal": true,
+  "IcoPathDark": "images\\lorem-white.png",
+  "IcoPathLight": "images\\lorem-black.png"
 }
