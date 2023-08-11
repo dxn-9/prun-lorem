@@ -1,0 +1,11 @@
+{
+  "ID": "EF2F634F20484459A365944FE7B07121",
+  "Disabled": false,
+  "ActionKeyword": "lorem",
+  "Name": "Lorem",
+  "Author": "dandn",
+  "Version": "1.0.0",
+  "Language": "csharp",
+  "ExecuteFileName": "Lorem.dll",
+  "IsGlobal": false
+}
