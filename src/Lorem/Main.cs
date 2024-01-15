@@ -12,7 +12,8 @@ namespace Lorem
 {
     public class Main : IPlugin
     {
-
+        public static string PluginID => "EF2F634F20484459A365944EE7B07121";
+            
         private string IconPath { get; set; }
         private PluginInitContext Context { get; set; }
         public string Name => "Lorem";
