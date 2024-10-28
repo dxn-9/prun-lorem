@@ -1,5 +1,5 @@
 # Lorem Ipsum Generator for PowerToys Run
-
+[![Mentioned in Awesome PowerToys Run Plugins](https://awesome.re/mentioned-badge.svg)](https://github.com/hlaueriksson/awesome-powertoys-run-plugins)
 ## Installation
 
 Download the release or compile it and copy the folder 'Lorem' to
